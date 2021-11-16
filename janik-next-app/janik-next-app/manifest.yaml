@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 7d0da607346045ce060b5b1aab2bf1a7c064aab6
+    app.openshift.io/vcs-ref: 54791f5c1698e6048d23c39fcca58a762609d44d
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/janik-next-app
   labels:
     app.kubernetes.io/instance: janik-next-app
@@ -24,7 +24,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 7d0da607346045ce060b5b1aab2bf1a7c064aab6
+    app.openshift.io/vcs-ref: 54791f5c1698e6048d23c39fcca58a762609d44d
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/janik-next-app
   labels:
     app.kubernetes.io/instance: janik-next-app
@@ -41,7 +41,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: 7d0da607346045ce060b5b1aab2bf1a7c064aab6
+        app.openshift.io/vcs-ref: 54791f5c1698e6048d23c39fcca58a762609d44d
         app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/janik-next-app
       labels:
         app.kubernetes.io/instance: janik-next-app
@@ -53,7 +53,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/janikbuecher/janik-next-app:7d0da607346045ce060b5b1aab2bf1a7c064aab6
+        image: quay.io/janikbuecher/janik-next-app:54791f5c1698e6048d23c39fcca58a762609d44d
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -91,7 +91,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 7d0da607346045ce060b5b1aab2bf1a7c064aab6
+    app.openshift.io/vcs-ref: 54791f5c1698e6048d23c39fcca58a762609d44d
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/janik-next-app
   labels:
     app.kubernetes.io/instance: janik-next-app
