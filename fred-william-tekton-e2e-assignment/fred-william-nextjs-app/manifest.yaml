@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: a35d9838b9c863c7836dacbc80958cab4878739f
+    app.openshift.io/vcs-ref: a8ad38abb273f263f308d754c675c1428c4b067b
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/fred-william-tekton-e2e-assignment
   labels:
     app.kubernetes.io/instance: fred-william-nextjs-app
@@ -24,7 +24,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: a35d9838b9c863c7836dacbc80958cab4878739f
+    app.openshift.io/vcs-ref: a8ad38abb273f263f308d754c675c1428c4b067b
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/fred-william-tekton-e2e-assignment
   labels:
     app.kubernetes.io/instance: fred-william-nextjs-app
@@ -42,7 +42,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: a35d9838b9c863c7836dacbc80958cab4878739f
+        app.openshift.io/vcs-ref: a8ad38abb273f263f308d754c675c1428c4b067b
         app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/fred-william-tekton-e2e-assignment
       labels:
         app.kubernetes.io/instance: fred-william-nextjs-app
@@ -54,7 +54,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/faklamanu/fred-william-nextjs-app:a35d9838b9c863c7836dacbc80958cab4878739f
+        image: quay.io/faklamanu/fred-william-nextjs-app:a8ad38abb273f263f308d754c675c1428c4b067b
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -92,7 +92,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: a35d9838b9c863c7836dacbc80958cab4878739f
+    app.openshift.io/vcs-ref: a8ad38abb273f263f308d754c675c1428c4b067b
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/fred-william-tekton-e2e-assignment
   labels:
     app.kubernetes.io/instance: fred-william-nextjs-app
