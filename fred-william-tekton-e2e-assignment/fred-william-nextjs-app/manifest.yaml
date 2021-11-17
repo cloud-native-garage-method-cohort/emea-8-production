@@ -3,7 +3,7 @@ kind: Service
 metadata:
   annotations:
     app.openshift.io/vcs-ref: a35d9838b9c863c7836dacbc80958cab4878739f
-    app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/fred-william-tekton-e2e-assignment/
+    app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/fred-william-tekton-e2e-assignment
   labels:
     app.kubernetes.io/instance: fred-william-nextjs-app
     app.kubernetes.io/name: fred-william-nextjs-app
@@ -25,7 +25,7 @@ kind: Deployment
 metadata:
   annotations:
     app.openshift.io/vcs-ref: a35d9838b9c863c7836dacbc80958cab4878739f
-    app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/fred-william-tekton-e2e-assignment/
+    app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/fred-william-tekton-e2e-assignment
   labels:
     app.kubernetes.io/instance: fred-william-nextjs-app
     app.kubernetes.io/name: fred-william-nextjs-app
@@ -43,7 +43,7 @@ spec:
     metadata:
       annotations:
         app.openshift.io/vcs-ref: a35d9838b9c863c7836dacbc80958cab4878739f
-        app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/fred-william-tekton-e2e-assignment/
+        app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/fred-william-tekton-e2e-assignment
       labels:
         app.kubernetes.io/instance: fred-william-nextjs-app
         app.kubernetes.io/name: fred-william-nextjs-app
@@ -93,7 +93,7 @@ kind: Route
 metadata:
   annotations:
     app.openshift.io/vcs-ref: a35d9838b9c863c7836dacbc80958cab4878739f
-    app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/fred-william-tekton-e2e-assignment/
+    app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/fred-william-tekton-e2e-assignment
   labels:
     app.kubernetes.io/instance: fred-william-nextjs-app
     app.kubernetes.io/name: fred-william-nextjs-app
