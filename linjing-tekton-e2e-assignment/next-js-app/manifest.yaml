@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 44be59160f524eb168fe569b844e74da3c8fe25e
+    app.openshift.io/vcs-ref: 61fb1f28350ac3d8f0dc7ae2d4975968db3dd5f2
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea-8-nextjs-app-linjing-tomasz.git
   labels:
     app.kubernetes.io/instance: next-js-app
@@ -24,7 +24,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 44be59160f524eb168fe569b844e74da3c8fe25e
+    app.openshift.io/vcs-ref: 61fb1f28350ac3d8f0dc7ae2d4975968db3dd5f2
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea-8-nextjs-app-linjing-tomasz.git
   labels:
     app.kubernetes.io/instance: next-js-app
@@ -42,7 +42,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: 44be59160f524eb168fe569b844e74da3c8fe25e
+        app.openshift.io/vcs-ref: 61fb1f28350ac3d8f0dc7ae2d4975968db3dd5f2
         app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea-8-nextjs-app-linjing-tomasz.git
       labels:
         app.kubernetes.io/instance: next-js-app
@@ -54,7 +54,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/fu_linjing/next-app:44be59160f524eb168fe569b844e74da3c8fe25e
+        image: quay.io/fu_linjing/next-app:61fb1f28350ac3d8f0dc7ae2d4975968db3dd5f2
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -92,7 +92,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 44be59160f524eb168fe569b844e74da3c8fe25e
+    app.openshift.io/vcs-ref: 61fb1f28350ac3d8f0dc7ae2d4975968db3dd5f2
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea-8-nextjs-app-linjing-tomasz.git
   labels:
     app.kubernetes.io/instance: next-js-app
