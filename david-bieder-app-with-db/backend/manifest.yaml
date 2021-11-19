@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 992e1533702410f2816ece75ce4a2af8f4a0f5ea
+    app.openshift.io/vcs-ref: 42451837f6183edfceb62d0cac6068e8d80b1dac
     app.openshift.io/vcs-uri: https://github.com/davidbieder/fullstack-backend-with-database
   labels:
     app.kubernetes.io/instance: backend
@@ -24,7 +24,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 992e1533702410f2816ece75ce4a2af8f4a0f5ea
+    app.openshift.io/vcs-ref: 42451837f6183edfceb62d0cac6068e8d80b1dac
     app.openshift.io/vcs-uri: https://github.com/davidbieder/fullstack-backend-with-database
   labels:
     app.kubernetes.io/instance: backend
@@ -41,7 +41,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: 992e1533702410f2816ece75ce4a2af8f4a0f5ea
+        app.openshift.io/vcs-ref: 42451837f6183edfceb62d0cac6068e8d80b1dac
         app.openshift.io/vcs-uri: https://github.com/davidbieder/fullstack-backend-with-database
       labels:
         app.kubernetes.io/instance: backend
@@ -55,7 +55,7 @@ spec:
           value: debug
         - name: DATABASE_URL
           value: postgres://user:password@postgresql:5432/db
-        image: quay.io/davidbieder/fullstack-backend-with-database:992e1533702410f2816ece75ce4a2af8f4a0f5ea
+        image: quay.io/davidbieder/fullstack-backend-with-database:42451837f6183edfceb62d0cac6068e8d80b1dac
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -93,7 +93,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 992e1533702410f2816ece75ce4a2af8f4a0f5ea
+    app.openshift.io/vcs-ref: 42451837f6183edfceb62d0cac6068e8d80b1dac
     app.openshift.io/vcs-uri: https://github.com/davidbieder/fullstack-backend-with-database
   labels:
     app.kubernetes.io/instance: backend
