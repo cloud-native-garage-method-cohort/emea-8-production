@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 2a6c132f0a63979331c59cd591903153875ed94a
+    app.openshift.io/vcs-ref: 9a318a6b5edbe00752d87ea833e2d88d4cf90fec
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea-8-squad1-icenotes-fe
   labels:
     app.kubernetes.io/instance: icenotes
@@ -24,7 +24,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 2a6c132f0a63979331c59cd591903153875ed94a
+    app.openshift.io/vcs-ref: 9a318a6b5edbe00752d87ea833e2d88d4cf90fec
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea-8-squad1-icenotes-fe
   labels:
     app.kubernetes.io/instance: icenotes
@@ -41,7 +41,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: 2a6c132f0a63979331c59cd591903153875ed94a
+        app.openshift.io/vcs-ref: 9a318a6b5edbe00752d87ea833e2d88d4cf90fec
         app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea-8-squad1-icenotes-fe
       labels:
         app.kubernetes.io/instance: icenotes
@@ -56,7 +56,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/bott_ibm/icenotes-fe:2a6c132f0a63979331c59cd591903153875ed94a
+        image: quay.io/bott_ibm/icenotes-fe:9a318a6b5edbe00752d87ea833e2d88d4cf90fec
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -94,7 +94,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: 2a6c132f0a63979331c59cd591903153875ed94a
+    app.openshift.io/vcs-ref: 9a318a6b5edbe00752d87ea833e2d88d4cf90fec
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/emea-8-squad1-icenotes-fe
   labels:
     app.kubernetes.io/instance: icenotes
