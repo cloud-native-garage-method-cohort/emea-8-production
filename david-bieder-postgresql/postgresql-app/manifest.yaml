@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: b4e6390bfe39f87eba604e2b0e6649a30a7649dc
+    app.openshift.io/vcs-ref: c565308e5b8c6e0633d6ab1bd818b1f03d087f60
     app.openshift.io/vcs-uri: https://github.com/davidbieder/fullstack-database
   labels:
     app: postgresql
@@ -27,7 +27,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: b4e6390bfe39f87eba604e2b0e6649a30a7649dc
+    app.openshift.io/vcs-ref: c565308e5b8c6e0633d6ab1bd818b1f03d087f60
     app.openshift.io/vcs-uri: https://github.com/davidbieder/fullstack-database
   labels:
     app: postgresql
@@ -52,7 +52,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: b4e6390bfe39f87eba604e2b0e6649a30a7649dc
+        app.openshift.io/vcs-ref: c565308e5b8c6e0633d6ab1bd818b1f03d087f60
         app.openshift.io/vcs-uri: https://github.com/davidbieder/fullstack-database
       labels:
         app.kubernetes.io/instance: postgresql-app
@@ -86,7 +86,7 @@ apiVersion: image.openshift.io/v1
 kind: ImageStream
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: b4e6390bfe39f87eba604e2b0e6649a30a7649dc
+    app.openshift.io/vcs-ref: c565308e5b8c6e0633d6ab1bd818b1f03d087f60
     app.openshift.io/vcs-uri: https://github.com/davidbieder/fullstack-database
   labels:
     app.kubernetes.io/instance: postgresql-app
